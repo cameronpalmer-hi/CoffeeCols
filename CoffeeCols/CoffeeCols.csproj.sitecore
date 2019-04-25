@@ -1,0 +1,9 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="CoffeeCols.sc" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Views\CoffeeCols\Articles\BaseLayout\BaseLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/CoffeeCols/Articles/BaseLayout/BaseLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{5523C9CD-B86A-45D8-9EDF-18357143E41A}</Item>
+  </File>
+</Project>
