@@ -6,4 +6,15 @@
   <File Include="/Views/CoffeeCols/Articles/BaseLayout/BaseLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{5523C9CD-B86A-45D8-9EDF-18357143E41A}</Item>
   </File>
+  <File Include="Views\CoffeeCols\AboutUs\AboutUs.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{70CB9FE5-592C-4C2B-92BC-F0DF97E4F7DF}</Item>
+  </File>
+  <File Include="Views\CoffeeCols\AboutUs\LocationList.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{E52DEEBB-FDFF-493C-A8FC-F756D3CCBB58}</Item>
+  </File>
+  <File Include="/Views/CoffeeCols/Articles/MVCFormOuterLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{CC02CA33-097A-4569-B1FF-11097FBD79D9}</Item>
+    <Item DatabaseName="master">{5BF784D8-965F-407A-8A78-2A9E2426949B}</Item>
+  </File>
+  <File Include="Views\CoffeeCols\Articles\MVCFormOuterLayout.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
 </Project>

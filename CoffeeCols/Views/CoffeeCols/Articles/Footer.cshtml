@@ -1,0 +1,30 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<footer>
+    <section>
+        <h3>@Html.Sitecore().Field("LeftTitle")</h3>
+        @Html.Sitecore().Field("LeftBody")
+    </section>
+    <section>
+        <h3>@Html.Sitecore().Field("CenterTitle")</h3>
+        @Html.Sitecore().Field("CenterBody")
+    </section>
+    <section>
+        <h3>@Html.Sitecore().Field("RightTitle")</h3>
+        @Html.Sitecore().Field("RightBody")
+    </section>
+</footer>
+@*@Html.Sitecore().DynamicPlaceholder("FooterSection", 1, 3, 0)*@
+@*@functions{
+        TagBuilder CreateDivWrap(DynamicPlaceholderRenderContext context)
+        {
+            var tagBuilder = new TagBuilder("section");
+            int[] widths = new int[] { 0, 12, 6, 4, 3 };
+            tagBuilder.AddCssClass("col-sm-" + widths[context.PlaceholdersCount]);
+            return tagBuilder;
+        }
+    }*@

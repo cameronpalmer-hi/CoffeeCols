@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+    var url = Sitecore.Links.LinkManager.GetItemUrl(Model.Item);
+}
+<li>
+    <section class="block">
+        <a href="@url">@Html.Sitecore().Field("TopicImage")</a>
+        <h2><a href="@url"></a>@Html.Sitecore().Field("Title")</h2>
+        <p>@Html.Sitecore().Field("Description")</p>
+    </section>
+</li>

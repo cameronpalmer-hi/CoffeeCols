@@ -1,0 +1,18 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+
+@model RenderingModel
+@{
+
+}
+<section id="content">
+    <div id="innercontent" style="width:880px;">
+        <article class="articlecontent">
+            <header>
+                <h2>@Html.Sitecore().Field("ContentHeading")</h2>
+            </header>
+            @Html.Sitecore().Field("AboutUsSection")
+        </article>
+        @Html.Sitecore().DynamicPlaceholder("LocationList")
+    </div>
+</section>

@@ -1,0 +1,12 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<section id="content">
+    <ul class="column">
+        @Html.Sitecore().DynamicPlaceholder("ArticleTopicCards")
+    </ul>
+</section>
+

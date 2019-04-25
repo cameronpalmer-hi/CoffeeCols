@@ -1,0 +1,26 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+
+}
+<div id="innercontent" style="width: 800px;">
+    <li>
+        @foreach (Item item in Model.Item.Children)
+        {
+            var url = Sitecore.Links.LinkManager.GetItemUrl(item);
+            <article class="articlecontent">
+                <header>
+                    <h3>@Html.Sitecore().Field("ContentHeading", item)</h3>
+                    <p>CoffeeCols</p>
+                    <p>@Html.Sitecore().Field("Street", item)
+                    @Html.Sitecore().Field("City", item), @Html.Sitecore().Field("State", item) @Html.Sitecore().Field("ZipCode", item)
+                    </p>
+                    <p>@Html.Sitecore().Field("PhoneNumber", item)</p>
+                    <p>@Html.Sitecore().Field("Email", item)</p>
+                </header>
+            </article>
+        }
+    </li>
+</div>

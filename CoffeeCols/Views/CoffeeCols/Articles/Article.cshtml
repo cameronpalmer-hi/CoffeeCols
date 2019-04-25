@@ -1,0 +1,17 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<section id="content">
+    <div id="innercontent" style="width:880px;">
+        <article class="articlecontent">
+            <header>
+                <h2>@Html.Sitecore().Field("ArticleTitle")</h2>
+                <h3>by - @Html.Sitecore().Field("ArticleAuthor")</h3>
+            </header>
+            @Html.Sitecore().Field("ArticleContent")
+        </article>
+    </div>
+</section>

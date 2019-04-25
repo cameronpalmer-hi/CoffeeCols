@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<section id="intro">
+    <header>
+        <h2>@Html.Sitecore().Field("ContentHeading")</h2>
+    </header>
+    <p>@Html.Sitecore().Field("ContentDescription")</p>
+    <a>@Html.Sitecore().Field("Image")</a>
+</section>

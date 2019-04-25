@@ -1,0 +1,35 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    Item currentItem = Sitecore.Context.Item;
+    Item[] navBarItems = navBarList(currentItem);
+}
+<nav>
+    <ul>
+        @foreach (Item item in navBarItems)
+        {
+            var url = Sitecore.Links.LinkManager.GetItemUrl(item);
+            if (item.ID == currentItem.ID)
+            {
+                <li class="selected"><a href="@url">@item.Name</a></li>
+            }
+            else
+            {
+                <li><a href="@url">@item.Name</a></li>
+            }
+        }
+    </ul>
+</nav>
+@functions{
+    Item[] navBarList(Item item)
+    {
+        Item renderingItem = item;
+        while (renderingItem.Parent.Name != "Articles")
+        {
+            renderingItem = renderingItem.Parent;
+        }
+        return renderingItem.Parent.GetChildren().ToArray();
+    }
+}
